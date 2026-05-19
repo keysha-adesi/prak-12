@@ -2,21 +2,22 @@
 using namespace std;
 
 class baseClass {
-    virtual void perkenalan() final{
-        cout << "Hallo saya Function dari base class";
+public:
+    virtual void perkenalan() final {
+        cout << "hallo saya function dari base class";
     }
 };
 
 class derivedClass : public baseClass {
-public:
-    void perkenalan() {
-        cout << "Hallo saya Function dari derived Class";
+public :
+    void perkenalan1() {
+        cout << "hallo saya function dari derived class";
     }
 };
 
 int main() {
     derivedClass a;
-    a.perkenalan();
+    a.perkenalan1();
 
     return 0;
 }
